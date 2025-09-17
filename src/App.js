@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import checkmark from './icon-checkmark.svg';
-import iconUnits from './icon-units.svg';
-import iconDropdown from './icon-dropdown.svg';
+import logo from './images/logo.svg';
+import checkmark from './images/icon-checkmark.svg';
+import iconUnits from './images/icon-units.svg';
+import iconDropdown from './images/icon-dropdown.svg';
 import SearchBar from './component/SearchBar';
+import ResultPage from './component/ResultPage';
 import './App.css';
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
       <main>
         <h1 className='Header-Text'>"How's the sky looking today?"</h1>
         <SearchBar/>
+        <ResultPage/>
       </main>
     </div>
   );

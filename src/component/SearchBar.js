@@ -1,5 +1,5 @@
 import React from "react";
-import iconSearch from '../icon-search.svg';
+import iconSearch from '../images/icon-search.svg';
 import '../App.css';
 
 function SearchBar(){

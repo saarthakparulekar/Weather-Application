@@ -134,6 +134,7 @@ body, .App {
   align-items: center;
   margin-top: 24px;
   gap: 12px;
+  padding-bottom: 20px;
 }
 
 .search-input-wrapper {
@@ -181,4 +182,78 @@ body, .App {
 
 .search-btn:hover {
   background: hsl(248, 70%, 36%);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result-container{
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  gap: 20px;
+}
+.daily{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  min-height: 600px;
+  border-radius: 16px;
+}
+.hourly{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(243, 23%, 24%);
+  width: 30%;
+  min-height: 600px;
+  border-radius: 16px;
+}
+.date-time {
+  width: 100%;
+  min-height: 200px;
+  background-image: url('./images/bg-today-large.svg');
+  background-repeat: no-repeat;
+  background-size: cover;      /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  border-radius: 16px;
+  overflow: hidden;            /* Ensures border-radius clips the background */
+}
+.current-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+.curr-cards{
+  background-color: hsl(243, 23%, 24%);
+  min-height: 110px;
+  min-width: 190px;
+  border-radius: 16px;
+  margin-top: 10px;
+  
+}
+.weekly-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.weekly-card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+.day-card{
+  background-color: hsl(243, 23%, 24%);
+  min-height: 160px;
+  min-width: 100px;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+.daily-forecast{
+  text-align: left;
 }
