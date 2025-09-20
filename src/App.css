@@ -14,7 +14,7 @@ body, .App {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 2px;
 }
 
 .App-logo {
@@ -125,7 +125,7 @@ body, .App {
 .Header-Text{
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: xxx-large;
-  padding: 4px;
+  padding: 2px;
 }
 
 .search-bar-container {
@@ -214,13 +214,14 @@ main{
 }
 .date-time {
   width: 100%;
-  min-height: 200px;
+  min-height: 260px;
   background-image: url('./images/bg-today-large.svg');
   background-repeat: no-repeat;
   background-size: cover;      /* Ensures the image covers the container */
   background-position: center; /* Centers the image */
   border-radius: 16px;
-  overflow: hidden;            /* Ensures border-radius clips the background */
+  overflow: hidden;
+  margin-bottom: 2%;            /* Ensures border-radius clips the background */
 }
 .current-data{
   display: flex;
@@ -234,7 +235,13 @@ main{
   min-width: 190px;
   border-radius: 16px;
   margin-top: 10px;
-  
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.curr-cards-header{
+  color: hsl(250, 6%, 84%);
+  margin-left: 10%;
 }
 .weekly-data{
   display: flex;
@@ -256,4 +263,35 @@ main{
 }
 .daily-forecast{
   text-align: left;
+}
+.suggestions-list {
+  text-align: left;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: hsl(243, 23%, 24%);
+  color: #fff;
+  border-radius: 16px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE and Edge */
+}
+
+.suggestion-item {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background: #444;
+}
+
+.suggestions-list::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
 }

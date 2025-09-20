@@ -12,6 +12,13 @@ function App() {
   const [speedUnit, setSpeedUnit] = useState('kmph');
   const [tempUnit, setTempUnit] = useState('celsius');
   const [precipUnit, setPrecipUnit] = useState('mm');
+  const [location, setLocation] = useState(null);
+
+  const handleLocationSelect = (loc) => {
+    setLocation(loc);
+    // You can now use loc.latitude and loc.longitude for your weather API
+    console.log('Selected location:', loc);
+  };
 
   return (
     <div className="App">
@@ -62,8 +69,8 @@ function App() {
         </div>
       </header>
       <main>
-        <h1 className='Header-Text'>"How's the sky looking today?"</h1>
-        <SearchBar/>
+        <h1 className='Header-Text'>How's the sky looking today?</h1>
+        <SearchBar onLocationSelect={handleLocationSelect} />
         <ResultPage/>
       </main>
     </div>
