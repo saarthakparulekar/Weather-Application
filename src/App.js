@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [speedUnit, setSpeedUnit] = useState('kmph');
+  const [speedUnit, setSpeedUnit] = useState('kmh');
   const [tempUnit, setTempUnit] = useState('celsius');
   const [precipUnit, setPrecipUnit] = useState('mm');
   const [location, setLocation] = useState(null);
@@ -47,8 +47,8 @@ function App() {
               <hr className="dropdown-separator" />
               <div className="dropdown-section">
                 <div className="dropdown-title">Wind Speed</div>
-                <div className={`dropdown-option${speedUnit === 'kmph' ? ' selected' : ''}`} onClick={() => setSpeedUnit('kmph')}>
-                  km/h {speedUnit === 'kmph' && <img src={checkmark} className="tick" alt="tick" />}
+                <div className={`dropdown-option${speedUnit === 'kmh' ? ' selected' : ''}`} onClick={() => setSpeedUnit('kmh')}>
+                  km/h {speedUnit === 'kmh' && <img src={checkmark} className="tick" alt="tick" />}
                 </div>
                 <div className={`dropdown-option${speedUnit === 'mph' ? ' selected' : ''}`} onClick={() => setSpeedUnit('mph')}>
                   mph {speedUnit === 'mph' && <img src={checkmark} className="tick" alt="tick" />}
@@ -60,8 +60,8 @@ function App() {
                 <div className={`dropdown-option${precipUnit === 'mm' ? ' selected' : ''}`} onClick={() => setPrecipUnit('mm')}>
                   Millimeters (mm) {precipUnit === 'mm' && <img src={checkmark} className="tick" alt="tick" />}
                 </div>
-                <div className={`dropdown-option${precipUnit === 'inches' ? ' selected' : ''}`} onClick={() => setPrecipUnit('inches')}>
-                  Inches (in) {precipUnit === 'inches' && <img src={checkmark} className="tick" alt="tick" />}
+                <div className={`dropdown-option${precipUnit === 'inch' ? ' selected' : ''}`} onClick={() => setPrecipUnit('inch')}>
+                  Inches (in) {precipUnit === 'inch' && <img src={checkmark} className="tick" alt="tick" />}
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ function App() {
       <main>
         <h1 className='Header-Text'>How's the sky looking today?</h1>
         <SearchBar onLocationSelect={handleLocationSelect} />
-        <ResultPage/>
+        <ResultPage location={location} speedUnit={speedUnit} tempUnit={tempUnit} precipUnit={precipUnit}/>
       </main>
     </div>
   );

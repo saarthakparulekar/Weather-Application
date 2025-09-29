@@ -7,6 +7,7 @@ function SearchBar({ onLocationSelect }) {
     const [suggestions, setSuggestions] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(false);
     const timeoutRef = useRef(null);
+    const wrapperRef = useRef(null);
 
     useEffect(() => {
         if (query.length < 2) {
@@ -25,6 +26,19 @@ function SearchBar({ onLocationSelect }) {
         return () => clearTimeout(timeoutRef.current);
     }, [query]);
 
+    // Close suggestions when clicking outside
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+                setShowSuggestions(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     const handleSelect = (suggestion) => {
         setQuery(suggestion.name);
         setShowSuggestions(false);
@@ -32,7 +46,8 @@ function SearchBar({ onLocationSelect }) {
             onLocationSelect({
                 name: suggestion.name,
                 latitude: suggestion.latitude,
-                longitude: suggestion.longitude
+                longitude: suggestion.longitude,
+                country: suggestion.country
             });
         }
     };
@@ -47,7 +62,7 @@ function SearchBar({ onLocationSelect }) {
     };
 
     return (
-        <div className="search-bar-container" style={{ position: "relative" }}>
+        <div className="search-bar-container" style={{ position: "relative" }} ref={wrapperRef}>
             <div className="search-input-wrapper">
                 <img src={iconSearch} alt="search" className="search-icon"/>
                 <input

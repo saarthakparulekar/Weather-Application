@@ -79,6 +79,8 @@ body, .App {
   z-index: 10;
   border-radius: 6px;
   padding: 12px;
+  margin-top: 6px;
+  margin-right: 40px;
   text-align: left;
 }
 
@@ -192,6 +194,7 @@ main{
 .result-container{
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   max-width: 1200px;
   gap: 20px;
@@ -200,7 +203,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
+  width: 800px;
   min-height: 600px;
   border-radius: 16px;
 }
@@ -208,20 +211,58 @@ main{
   display: flex;
   flex-direction: column;
   background-color: hsl(243, 23%, 24%);
-  width: 30%;
+  width: 380px;
   min-height: 600px;
   border-radius: 16px;
 }
 .date-time {
   width: 100%;
-  min-height: 260px;
+  height: 260px;
   background-image: url('./images/bg-today-large.svg');
   background-repeat: no-repeat;
   background-size: cover;      /* Ensures the image covers the container */
   background-position: center; /* Centers the image */
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 2%;            /* Ensures border-radius clips the background */
+  margin-bottom: 2%;    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;        /* Ensures border-radius clips the background */
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin-left: 20px;
+}
+.right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 300px;
+  margin-right: 20px;
+}
+.header-temp{
+  font-size: 6.2em;
+  font-style: italic;
+  margin-left: 10px;
+}
+.header-date-time{
+  font-size: 1em;
+  align-self: flex-start;
+  margin-left: 12px;
+  margin-top: 2%;
+}
+.header-loc{
+  font-size: 2em;
+  align-self: flex-start;
+  margin-left: 12px;
+  margin-bottom: 2%;
+}
+.curr-weather-icon{
+  height: 100px;
+  width: 100px;
 }
 .current-data{
   display: flex;
@@ -242,6 +283,14 @@ main{
 .curr-cards-header{
   color: hsl(250, 6%, 84%);
   margin-left: 10%;
+  margin-bottom: 0;
+}
+.curr-cards-results{
+  margin-left: 10%;
+  font-size: 2em;
+  font-weight: 100;
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 .weekly-data{
   display: flex;
@@ -254,10 +303,19 @@ main{
   align-items: space-between;
   flex-wrap: wrap;
 }
+.weekly-icon{
+  height: 60px;
+  width: 60px;
+}
+.weekly-max-min{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .day-card{
   background-color: hsl(243, 23%, 24%);
-  min-height: 160px;
-  min-width: 100px;
+  height: 160px;
+  width: 100px;
   border-radius: 16px;
   margin-top: 10px;
 }
