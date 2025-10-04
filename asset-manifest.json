@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Weather-Application/static/css/main.0bfca5c7.css",
+    "main.js": "/Weather-Application/static/js/main.c18755a0.js",
+    "static/js/453.258dce0b.chunk.js": "/Weather-Application/static/js/453.258dce0b.chunk.js",
+    "static/media/logo.svg": "/Weather-Application/static/media/logo.180877536ebf0b1c44abc6d88d4e9bae.svg",
+    "static/media/icon-fog.webp": "/Weather-Application/static/media/icon-fog.cfbc8851a50ab0a52986.webp",
+    "static/media/bg-today-large.svg": "/Weather-Application/static/media/bg-today-large.0ea745fe7292037130ab.svg",
+    "static/media/icon-sunny.webp": "/Weather-Application/static/media/icon-sunny.7cdcf41677289b5af443.webp",
+    "static/media/icon-partly-cloudy.webp": "/Weather-Application/static/media/icon-partly-cloudy.34557834b606885c72e5.webp",
+    "static/media/icon-rain.webp": "/Weather-Application/static/media/icon-rain.69df2f59fc4a3614bc71.webp",
+    "static/media/icon-drizzle.webp": "/Weather-Application/static/media/icon-drizzle.6993e60b5806e96c284a.webp",
+    "static/media/icon-storm.webp": "/Weather-Application/static/media/icon-storm.f80d71f5604f62da2bf9.webp",
+    "static/media/icon-snow.webp": "/Weather-Application/static/media/icon-snow.8eec387320a67003daf1.webp",
+    "static/media/icon-overcast.webp": "/Weather-Application/static/media/icon-overcast.35ade02c60e4f610ff0a.webp",
+    "static/media/icon-units.svg": "/Weather-Application/static/media/icon-units.9eb215646b61f2862cc634e3def04393.svg",
+    "index.html": "/Weather-Application/index.html",
+    "static/media/icon-search.svg": "/Weather-Application/static/media/icon-search.5b999ce184e338f3c5400eb82c107192.svg",
+    "static/media/icon-dropdown.svg": "/Weather-Application/static/media/icon-dropdown.c8dca8f83d3ae535326e2e96e85b3ba7.svg",
+    "static/media/icon-checkmark.svg": "/Weather-Application/static/media/icon-checkmark.6837488ff0a07a4c422c068b6fe7bd8d.svg",
+    "main.0bfca5c7.css.map": "/Weather-Application/static/css/main.0bfca5c7.css.map",
+    "main.c18755a0.js.map": "/Weather-Application/static/js/main.c18755a0.js.map",
+    "453.258dce0b.chunk.js.map": "/Weather-Application/static/js/453.258dce0b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bfca5c7.css",
+    "static/js/main.c18755a0.js"
+  ]
+}
