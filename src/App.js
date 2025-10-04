@@ -15,10 +15,11 @@ function App() {
   const [location, setLocation] = useState(null);
 
   const handleLocationSelect = (loc) => {
-    setLocation(loc);
-    // You can now use loc.latitude and loc.longitude for your weather API
-    console.log('Selected location:', loc);
-  };
+    if (!location || (location.latitude !== loc.latitude || location.longitude !== loc.longitude)) {
+      setLocation(loc);
+      console.log(loc);
+    }
+};
 
   return (
     <div className="App">

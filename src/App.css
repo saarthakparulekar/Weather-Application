@@ -50,7 +50,7 @@ body, .App {
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: hsl(243, 23%, 24%);
+  background-color: hsl(243, 27%, 20%);
   color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
@@ -73,7 +73,7 @@ body, .App {
   position: absolute;
   right: 0;
   top: 110%;
-  background: hsl(243, 23%, 24%);
+  background: hsl(243, 27%, 20%);
   min-width: 180px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 10;
@@ -159,7 +159,7 @@ body, .App {
   border: none;
   font-size: 18px;
   width: 240px;
-  background: hsl(243, 23%, 24%);
+  background: hsl(243, 27%, 20%);
   color: #fff;
   font-family: 'DM Sans', sans-serif;
 }
@@ -210,9 +210,9 @@ main{
 .hourly{
   display: flex;
   flex-direction: column;
-  background-color: hsl(243, 23%, 24%);
+  background-color: hsl(243, 27%, 20%);
   width: 380px;
-  min-height: 600px;
+  height: 640px;
   border-radius: 16px;
 }
 .date-time {
@@ -271,7 +271,7 @@ main{
   flex-wrap: wrap;
 }
 .curr-cards{
-  background-color: hsl(243, 23%, 24%);
+  background-color: hsl(243, 27%, 20%);
   min-height: 110px;
   min-width: 190px;
   border-radius: 16px;
@@ -313,7 +313,7 @@ main{
   justify-content: space-evenly;
 }
 .day-card{
-  background-color: hsl(243, 23%, 24%);
+  background-color: hsl(243, 27%, 20%);
   height: 160px;
   width: 100px;
   border-radius: 16px;
@@ -328,7 +328,7 @@ main{
   top: 100%;
   left: 0;
   right: 0;
-  background: hsl(243, 23%, 24%);
+  background: hsl(243, 27%, 20%);
   color: #fff;
   border-radius: 16px;
   max-height: 200px;
@@ -352,4 +352,114 @@ main{
 
 .suggestions-list::-webkit-scrollbar {
   display: none;                /* Chrome, Safari, Opera */
+}
+
+.hourly-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.hourly-header-text{
+  margin: 0 4px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.hourly-button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: hsl(243, 23%, 30%);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  gap: 8px;
+}
+
+.dropdown-day{
+  margin: 0 4px;
+  font-size: 1.1em;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hourly-data-display{
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 0;
+  overflow-y: auto;
+}
+
+.hourly-data-display::-webkit-scrollbar{
+  width: 20px;
+}
+.hourly-data-display::-webkit-scrollbar-track{
+  background: transparent;
+}
+.hourly-data-display::-webkit-scrollbar-thumb{
+  background: hsl(243, 23%, 30%);
+  border-radius: 10px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.hourly-data-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(243, 23%, 24%);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.hourly-data-icon{
+  height: 58px;
+  width: 58px;
+  padding-left: 2%;
+}
+
+.hourly-data-time{
+  padding-right: 50%;
+  font-size: 1em;
+}
+
+.hourly-data-temp{
+  padding-right: 4%;
+  font-size: 1em;
+}
+
+.days-container{
+  display: inline-block;
+  position: relative;
+}
+
+.days-dropdown{
+  position: absolute;
+  background-color: hsl(243, 23%, 24%);
+  border-radius: 8px;
+  top: 120%;
+  right: 0;
+  text-align: start;
+  width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.day-list{
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.day-list.selected, .day-list:hover{
+  background-color: hsl(243, 23%, 30%);
 }
