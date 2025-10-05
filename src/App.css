@@ -6,8 +6,9 @@ body, .App {
 }
 
 .App-logo {
-  height: 4vmin;
-  padding: 2%;
+  height: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 
 .App-header {
@@ -17,9 +18,6 @@ body, .App {
   padding: 2px;
 }
 
-.App-logo {
-  height: 40px;
-}
 
 .metrics-header {
   display: flex;
@@ -43,6 +41,7 @@ body, .App {
 .units-dropdown-container {
   position: relative;
   display: inline-block;
+  padding-top: 40px;
   padding-right: 40px;
 }
 
@@ -137,6 +136,7 @@ body, .App {
   margin-top: 24px;
   gap: 12px;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .search-input-wrapper {
@@ -229,6 +229,7 @@ main{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;        /* Ensures border-radius clips the background */
+  flex-wrap: wrap;
 }
 .left{
   display: flex;
@@ -462,4 +463,24 @@ main{
 }
 .day-list.selected, .day-list:hover{
   background-color: hsl(243, 23%, 30%);
+}
+
+@media (max-width: 720px) {
+  .date-time {
+    background-image: url(./images/bg-today-small.svg);
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .left, .right {
+    min-width: 0;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .search-btn{
+    width: 420px;
+  }
 }
