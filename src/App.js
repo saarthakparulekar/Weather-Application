@@ -12,7 +12,12 @@ function App() {
   const [speedUnit, setSpeedUnit] = useState('kmh');
   const [tempUnit, setTempUnit] = useState('celsius');
   const [precipUnit, setPrecipUnit] = useState('mm');
-  const [location, setLocation] = useState(null);
+  const [location, setLocation] = useState({
+    "name": "Mumbai",
+    "latitude": 19.07283,
+    "longitude": 72.88261,
+    "country": "India"
+  });
 
   const handleLocationSelect = (loc) => {
     if (!location || (location.latitude !== loc.latitude || location.longitude !== loc.longitude)) {
