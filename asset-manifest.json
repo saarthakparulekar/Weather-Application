@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Weather-Application/static/css/main.0bfca5c7.css",
+    "main.css": "/Weather-Application/static/css/main.5bc082b4.css",
     "main.js": "/Weather-Application/static/js/main.acfb0219.js",
     "static/js/453.258dce0b.chunk.js": "/Weather-Application/static/js/453.258dce0b.chunk.js",
     "static/media/logo.svg": "/Weather-Application/static/media/logo.180877536ebf0b1c44abc6d88d4e9bae.svg",
     "static/media/icon-fog.webp": "/Weather-Application/static/media/icon-fog.cfbc8851a50ab0a52986.webp",
     "static/media/bg-today-large.svg": "/Weather-Application/static/media/bg-today-large.0ea745fe7292037130ab.svg",
+    "static/media/bg-today-small.svg": "/Weather-Application/static/media/bg-today-small.cd99d8d596b67e82e0ca.svg",
     "static/media/icon-sunny.webp": "/Weather-Application/static/media/icon-sunny.7cdcf41677289b5af443.webp",
     "static/media/icon-partly-cloudy.webp": "/Weather-Application/static/media/icon-partly-cloudy.34557834b606885c72e5.webp",
     "static/media/icon-rain.webp": "/Weather-Application/static/media/icon-rain.69df2f59fc4a3614bc71.webp",
@@ -18,12 +19,12 @@
     "static/media/icon-search.svg": "/Weather-Application/static/media/icon-search.5b999ce184e338f3c5400eb82c107192.svg",
     "static/media/icon-dropdown.svg": "/Weather-Application/static/media/icon-dropdown.c8dca8f83d3ae535326e2e96e85b3ba7.svg",
     "static/media/icon-checkmark.svg": "/Weather-Application/static/media/icon-checkmark.6837488ff0a07a4c422c068b6fe7bd8d.svg",
-    "main.0bfca5c7.css.map": "/Weather-Application/static/css/main.0bfca5c7.css.map",
+    "main.5bc082b4.css.map": "/Weather-Application/static/css/main.5bc082b4.css.map",
     "main.acfb0219.js.map": "/Weather-Application/static/js/main.acfb0219.js.map",
     "453.258dce0b.chunk.js.map": "/Weather-Application/static/js/453.258dce0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bfca5c7.css",
+    "static/css/main.5bc082b4.css",
     "static/js/main.acfb0219.js"
   ]
 }
