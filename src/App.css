@@ -158,7 +158,8 @@ body, .App {
   border-radius: 8px;
   border: none;
   font-size: 18px;
-  width: 240px;
+  max-width: 240px;
+  min-width: 200px;
   background: hsl(243, 27%, 20%);
   color: #fff;
   font-family: 'DM Sans', sans-serif;
@@ -481,6 +482,30 @@ main{
     margin-bottom: 0;
   }
   .search-btn{
-    width: 420px;
+    width: 380px;
+  }
+  .App-logo{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .units-dropdown-container{
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .curr-cards{
+    min-width: 180px;
+  }
+}
+
+@media (max-width : 400px){
+  .curr-cards{
+    min-width: 160px;
+  }
+  .search-btn{
+    width: 340px;
+  }
+  .search-input{
+    max-width: 160px;
+    min-width: 160px;
   }
 }
