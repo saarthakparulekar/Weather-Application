@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# 🌦 Weather Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive **Weather Dashboard** built with **HTML, CSS, JavaScript, and React.js**.
+It uses the **Open-Meteo Geolocation API** to detect user location and the **Open-Meteo Weather API** to fetch and display real-time weather information.
 
-## Available Scripts
+👉 **Live Demo:** [Weather Application](https://saarthakparulekar.github.io/Weather-Application)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* 🔍 **Search by location** (via Open-Meteo Geolocation API)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 🌡 **Current Weather Data**:
 
-### `npm test`
+  * Current temperature
+  * Feels-like temperature
+  * Humidity percentage
+  * Precipitation levels
+  * Wind speed
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* 📅 **7-Day Forecast**:
 
-### `npm run build`
+  * Weather icon based on weather code
+  * Daily high and low temperatures
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* ⏰ **Hourly Forecast**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Select any of the next 7 days
+  * Hourly temperature
+  * Weather icon per hour
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Frontend:** HTML, CSS, JavaScript, React.js
+* **APIs:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * [Open-Meteo Geolocation API](https://open-meteo.com/en/docs/geocoding-api)
+  * [Open-Meteo Weather API](https://open-meteo.com/en/docs)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### 1. Clone the repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/yourusername/weather-dashboard.git
+cd weather-dashboard
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Install dependencies
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Run locally
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Your app should now be running on [http://localhost:3000](http://localhost:3000).
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📂 Project Structure
 
-### Advanced Configuration
+```
+/public         → static files
+/src
+  ├── components → React components (ResultPage, SearchBar)
+  ├── images     → Icons and background images
+  ├── App.js     → Main app logic
+  ├── index.js   → React entry point
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔗 API Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* **Geolocation API** → fetches latitude & longitude for a given location
+* **Weather API** → uses those coordinates to get:
 
-### `npm run build` fails to minify
+  * Current conditions
+  * 7-day daily forecast
+  * Hourly forecast for each day
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📸 Screenshots (Optional)
+
+<img width="1875" height="1004" alt="image" src="https://github.com/user-attachments/assets/f1a9e124-1380-4458-9cd3-ade8ecebcf13" />
+<img width="1875" height="1004" alt="image" src="https://github.com/user-attachments/assets/6dfe7e05-10c5-4c7f-8068-51a456a15d1e" />
+<img width="1875" height="1004" alt="image" src="https://github.com/user-attachments/assets/da2cc5ae-fe8e-4c64-a67a-55a78d087f87" />
+<img width="1875" height="1004" alt="image" src="https://github.com/user-attachments/assets/cc895af2-c437-477b-85b0-448ee703dd7b" />
+
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo, open issues, and submit pull requests.
+
+---
+
+## 🙌 Acknowledgements
+
+* [Frontend-Mentor](https://www.frontendmentor.io/home) for figma templates, guides, icons and backgrounds
+* [Open-Meteo](https://open-meteo.com/) for free weather APIs
+* [React](https://react.dev/) for the frontend framework
+
